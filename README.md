@@ -11,6 +11,12 @@ window/size/viewport_width=3808
 window/size/viewport_height=1606
 ```
 
+```
+# 元の設定
+window/size/viewport_width=1904
+window/size/viewport_height=803
+```
+
 サンドボックスでゲームを開き、リプレイを作っておく。撮影したいワゴンをエンジンに接続する。
 
 1. リプレイを再生
