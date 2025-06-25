@@ -37,3 +37,8 @@ window/size/viewport_height=803
 ```
 py -m pipenv run py ./script/screenshot.py [ファイル名] [レベル] [透過の閾値] [マスクのディレクトリ]
 ```
+
+## デバッグ用撮影の削除
+```
+py -m pipenv run py ./script/delete_debug.py
+```
