@@ -8,6 +8,7 @@ import mask
 filename = sys.argv[1] if len(sys.argv) > 1 else "debug"
 level = sys.argv[2] if len(sys.argv) > 2 else "1"
 threshold = int(sys.argv[3]) if len(sys.argv) > 3 else 20
+mask_dir = sys.argv[4] if len(sys.argv) > 4 else "mask_1"
 
 # Unrailed2のウインドウをアクティブに
 window = None
@@ -36,7 +37,7 @@ for path in paths.values():
 # スクショ1枚目（sideview）
 screenshot1 = pyautogui.screenshot(region=(1455, 837, 368, 326))
 screenshot1.save(paths["sideview_original"])
-mask.mask(screenshot1, "src/mask_sideview.png", threshold).save(paths["sideview"])
+mask.mask(screenshot1, f"src/{mask_dir}/sideview.png", threshold).save(paths["sideview"])
 
 # Cキーを3回押す
 for _ in range(3):
@@ -47,7 +48,7 @@ time.sleep(0.05)
 # スクショ2枚目（topview）
 screenshot2 = pyautogui.screenshot(region=(1421, 840, 382, 382))
 screenshot2.save(paths["topview_original"])
-mask.mask(screenshot2, "src/mask_topview.png", threshold).save(paths["topview"])
+mask.mask(screenshot2, f"src/{mask_dir}/topview.png", threshold).save(paths["topview"])
 
 # Cキーを3回押す
 for _ in range(3):
