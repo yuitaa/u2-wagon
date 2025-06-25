@@ -35,5 +35,5 @@ window/size/viewport_height=803
 4. 撮影したいワゴンがエンジンに付いているタイミングでスペースキーを使って停止
 
 ```
-py -m pipenv run py ./script/screenshot.py [ファイル名]
+py -m pipenv run py ./script/screenshot.py [ファイル名] [レベル]
 ```

@@ -5,6 +5,7 @@ import pygetwindow as gw
 import os
 
 filename = sys.argv[1] if len(sys.argv) > 1 else "debug"
+level = sys.argv[2] if len(sys.argv) > 2 else "1"
 
 # Unrailed2のウインドウをアクティブに
 window = None
@@ -20,8 +21,8 @@ else:
     raise Exception("Unrailed2 が見つかりません")
 
 # 保存先ディレクトリを作成（なければ）
-sideview_path = f"images/sideview/{filename}.png"
-topview_path = f"images/topview/{filename}.png"
+sideview_path = f"images/sideview/{level}/sideview_{filename}_{level}.png"
+topview_path = f"images/topview/{level}/topview_{filename}_{level}.png"
 os.makedirs(os.path.dirname(sideview_path), exist_ok=True)
 os.makedirs(os.path.dirname(topview_path), exist_ok=True)
 
