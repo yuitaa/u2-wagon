@@ -1,7 +1,7 @@
 | 日                     | 英           |
 | ---------------------- | ------------ |
 | クラフトワゴン         | crafter      |
-| ブレーキレールワゴン   | brakerail    |
+| ブレーキレールワゴン   | braketrack    |
 | 圧縮ワゴン             | compactor    |
 | 変換ワゴン             | transformer  |
 | 採掘ワゴン             | miner        |
