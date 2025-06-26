@@ -1,10 +1,17 @@
 {
     "cSpell.words": [
+        "arcname",
+        "bboxes",
         "braketrack",
         "fromarray",
+        "getbbox",
+        "getchannel",
+        "pipenv",
         "pygetwindow",
         "sideview",
+        "subfolders",
         "teleporter",
-        "topview"
+        "topview",
+        "zipf"
     ]
 }

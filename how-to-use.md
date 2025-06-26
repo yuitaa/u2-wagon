@@ -38,3 +38,8 @@ py -m pipenv run py ./script/screenshot.py [ファイル名] [レベル] [透過
 ```
 py -m pipenv run py ./script/delete_debug.py
 ```
+
+## リリース用ファイルの作成
+```
+py -m pipenv run py ./script/release.py [u2-wagon-{version}]
+```
